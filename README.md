@@ -13,7 +13,7 @@ You can click on the green button "Code" and download the folder as a .zip (or c
 
 ## Rationale of the analysis
 
-The script will connect the sample name (unique to each flower measured) to each cycle of the PTR-MS analysis. It then produces some plots to check stability of the analysis through the cycles, and finally calculates a mean per plant.
+The script will connect the sample name (plant or individual ID, not containing the replicate ID) to each cycle of the PTR-MS analysis. It then produces some plots to check stability of the analysis through the cycles, and finally calculates a mean per plant.
 
 More in detail, it calculates mean and standard deviation (SD) of the last five cycles per each sample measured. It then displays a plot of the oxygen mean and SD in each sample measured. This is intended as a plot to check that levels of oxygen were stable below 0.30. If not, we had a problem (tissue stuck to the probe or so). Then we can select one scent compound and produce a similar plot showing mean and SD of the last five cycles, to make sure all analyses were stable. It then offers the opportunity to remove some samples, if their SD is too wide or we notice problematic levels of oxygen. It then calculates the individual (or plant) mean and SD, ie the mean of all flowers measured per plant.
 
@@ -72,4 +72,4 @@ directory we will have:
 
 **output_rawdata_onlysamples.csv** shows the raw data of each cycle that is associated to a sample (not just the last five), and shows the sample and replicate IDs.
 
-**output_plantMean_selectedCompounds.csv** ahows the individual mean for the selected compounds.
+**output_plantMean_selectedCompounds.csv** shows the individual mean for the selected compounds.
