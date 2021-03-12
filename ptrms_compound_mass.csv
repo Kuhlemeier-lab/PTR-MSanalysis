@@ -1,0 +1,32 @@
+#PTR-MS compound masses,,
+#Kuhlemeier group,,
+#Setting Dec2020.,,
+compound ,true_mass ,mass_ptrms 
+benzaldehyde,106.13,107
+methylbenzoate,136.15,137
+benzeneacetaldhyde (=Phenylacetaldehyde) / acetophenone,120.15,121
+phenylethyl alcohol,122.17,123
+benzylacetate / ethylbenzoate,150.18,151
+methylsalicylate / vanillin,152.14,153
+eugenol/isoeugenol,164.2,165
+benzylbenzoate,212.24,213
+benzylsalicylate,228,229
+"hexadecanoic acid, methyl ester / methylpalmitate",270.45,271
+benzylalcohol,108.14,109
+1-Hexanol-2-ethyl,130.135757,131
+methyl nicotinate,137.047684,138
+"benzoic acid, 2-methoxy methylester/dimethyl salicylate",166.062988,167
+methyl eugenol / methyl isoeugenol,178.09938,179
+vanillyl methyl ketone,180.078644,181
+benzylisovalerate,192.115036,193
+caryophyllene/cedrene,204.187805,205
+"heptadecanoic acid, methyl ester",284.271515,285
+"linoleic acid, methyl ester",294.25589,295
+"octadecanoic acid, methyl ester",298.28717,299
+"bicosanoic acid, methylester",326.318481,327
+NH4,NA,18
+primary ion H3(18)O+ (isotope of H3O),NA,21
+electronic_noise,NA,25
+NO+,NA,30
+O2+,NA,32
+H2OH2O water cluster,NA,37
