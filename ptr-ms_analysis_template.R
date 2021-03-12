@@ -5,10 +5,6 @@
 # Last modified March 12th 2021
 # License: GNU GPL-3
 
-# Working directory:
-wd <- "~/phd/ptrms/"
-setwd(wd)
-
 # This script is to analyse the PTR-MS data.
 #
 # Inputs:
