@@ -2,7 +2,7 @@
 # Kuhlemeier group
 # Marta Binaghi <marta.binaghi at ips.unibe.ch>
 # Created January 6th 2021
-# Last modified March 12th 2021
+# Last modified June 3rd 2021
 # License: GNU GPL-3
 
 # This script is to analyse the PTR-MS data.
@@ -316,7 +316,7 @@ ggplot(data = clean_data_sampleMean,
   geom_hline(yintercept = 0.3, col = "red") +
   ggtitle("Sample mean and SD of oxygen content") +
   xlab("Sample") +
-  ylab("Oxygen content +/- SD") +
+  ylab("Oxygen content +/- SD (ppb)") +
   scale_color_discrete(name = "Date") +
   theme_classic()
 ggsave(filename = paste0(outdir, "/plot_exploratory_oxygen_level.png"),
@@ -339,7 +339,7 @@ ggplot(data = clean_data_sampleMean,
                 width = 0.3) +
   ggtitle(paste0("Sample mean and SD of ", compound)) +
   xlab("Date") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   scale_color_discrete(name = "Sample") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -382,7 +382,7 @@ ggplot(data = clean_data_sampleMean,
                 width = 0.3) +
   ggtitle(paste0("Sample mean and SD of ", compound)) +
   xlab("Date") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   scale_color_discrete(name = "Sample") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -423,7 +423,7 @@ ggplot(data = plantMean,
                     ymax = get(compound) + plantSD[ , compound])) +
   ggtitle(paste0("Plant mean and SD of ", compound)) +
   xlab("Sample") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   scale_color_discrete(name = "Sample") +
   theme_classic()
 
@@ -454,7 +454,7 @@ ggplot(data = plantMean,
                     ymax = get(compound) + plantSD[ , compound])) +
   ggtitle(paste0("Plant mean and SD of ", compound)) +
   xlab("Sample") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   scale_color_discrete(name = "Sample") +
   theme_classic()
 
@@ -468,7 +468,7 @@ ggplot(data = plantMean,
   geom_point(alpha = 0.6) +
   ggtitle(paste0("Genotype mean and SD of ", compound)) +
   xlab("Genotype") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   theme_classic() +
   theme(legend.position = "none")
 
@@ -523,7 +523,7 @@ ggplot(plant_df,
   scale_y_continuous(expand = expansion(mult=c(0,0.1)), limits = c(0, NA)) +
   ggtitle("Genotype mean and SD of several compounds") +
   xlab("Genotype") +
-  ylab("Content mean +/- SD") +
+  ylab("Content mean +/- SD (ppb)") +
   theme_classic() +
   theme(legend.position = "none")
 ggsave(filename = paste0(outdir, "/plot_genotypeMean.png"),
