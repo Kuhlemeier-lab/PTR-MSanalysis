@@ -1,6 +1,6 @@
 # PTR-MS analysis template
 
-<img src="output_20210312-1140/plot_genotypeMean.png" width="300">
+<img src="output_20210603-1035/plot_genotypeMean.png" width="300">
 
 R script and instructions to analyse the output of a PTR-MS analysis. The script is intended for interactive use (eg in Rstudio), not for automated running via the command line.
 
