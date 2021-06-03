@@ -5,11 +5,11 @@
 R script and instructions to analyse the output of a PTR-MS analysis. The script is intended for interactive use (eg in Rstudio), not for automated running via the command line.
 
 It is tailored to scent compounds in Petunia, but can be adapted to other quadrupole settings by providing a different mass setting file.
-The output files of the PTR-MS Control software are in a proprietary format and I haven't found a way to import those directly in R. I therefore export the data from the PTR-MS Control software at the end of each analysis, using the function "export to clipboard" and pasting in a text file.
+The output files of the PTR-MS Control software are in a proprietary format and I haven't found a way to import those directly in R. I therefore export the data from the PTR-MS Control software at the end of each analysis, using the function "export to clipboard" and pasting in a text file. Note that the default protocol in our lab includes the visualisation of the measured compounds in "concentration" mode (set in the PTR-MS control software). Therefore the results will be mean concentration in ppb.
 
 ## How to use this template
 
-You can click on the green button "Code" and download the folder as a .zip (or clone the repo, if you are a git-pro ;) ). You can use the files in the folder as templates and format your files accordingly. You can then remove all the rawdata template files and add yours. Then go to Rstudio, open the [ptr-ms_analysis_template.R](ptr-ms_analysis_template.R) file and go interactively through the script. The script is commented so you should be able to understand what it does and adjust it to your needs, if you have to.
+You can click on the green button "Code" at the top of this page and download the folder as a .zip (or clone the repo, if you are a git-pro ;) ). You can use the files in the folder as templates and format your files accordingly. You can then remove all the rawdata template files and add yours. Then go to Rstudio, open the [ptr-ms_analysis_template.R](ptr-ms_analysis_template.R) file and go interactively through the script. The script is commented so you should be able to understand what it does and adjust it to your needs, if you have to.
 
 ## Rationale of the analysis
 
