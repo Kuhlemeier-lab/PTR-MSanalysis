@@ -303,7 +303,7 @@ clean_data_sampleSD <- ddply(clean_data[ , 3:33], .(date_formatted, sample, repl
 
 # explore stability across cycles -----------------------------------------
 
-# exploratory plot for oxygen levels (if > 0.3 there was a problem)
+# exploratory plot for oxygen levels (if > 3% there was a problem)
 ggplot(data = clean_data_sampleMean,
        aes(x = 1:nrow(clean_data_sampleMean),
            y = mz32,
@@ -312,8 +312,8 @@ ggplot(data = clean_data_sampleMean,
   geom_errorbar(aes(x = 1:nrow(clean_data_sampleMean),
                     ymin = mz32 - clean_data_sampleSD$mz32,
                     ymax = mz32 + clean_data_sampleSD$mz32)) +
-  ylim(0, 0.5) +
-  geom_hline(yintercept = 0.3, col = "red") +
+  ylim(0, max(c(4, max(clean_data_sampleSD$mz32)))) +
+  geom_hline(yintercept = 3, col = "red") +
   ggtitle("Sample mean and SD of oxygen content") +
   xlab("Sample") +
   ylab("Oxygen content +/- SD (ppb)") +
